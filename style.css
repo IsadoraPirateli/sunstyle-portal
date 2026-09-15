@@ -1,0 +1,562 @@
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/* MENU */
+header {
+    height: 73px;
+    background-color: #00252d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+}
+/* LOGO */
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #005064;
+}
+.logo span {
+    background-color: #fbc126;
+    color: #005064;
+    padding: 6px 10px;
+    border-radius: 25px 0 25px 0;
+    margin-right: 2px;
+}
+/* MENU DE LINKS */
+nav {
+    display: flex;
+    gap: 48px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #fbc126;
+}
+/* BANNER */
+.banner {
+    height: 527px;
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    position: relative;
+}
+/* TEXTO DO BANNER */
+.texto-banner {
+    position: absolute;
+    left: 3.7%;
+    top: 92px;
+}
+/* TÍTULO */
+.texto-banner h1 {
+    color: #005064;
+    font-size: 35px;
+    line-height: 1.28;
+    margin-bottom: 5px;
+}
+/* NOME DA COLEÇÃO */
+.texto-banner h2 {
+    color: #fbc126;
+    font-size: 42px;
+    margin-bottom: 17px;
+}
+/* BOTÃO */
+.botao {
+    display: inline-block;
+    background-color: #fbc126;
+    color: #003d4a;
+    text-decoration: none;
+    padding: 11px 14px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.botao:hover {
+    background-color: #e6aa00;
+}
+/* SOBRE A SUNSTYLE */
+.sobre {
+    height: 294px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: white;
+}
+/* IMAGEM */
+.imagem-sobre img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/* TEXTO */
+.texto-sobre {
+    flex: 1;
+}
+.texto-sobre h2 {
+    color: #005064;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.texto-sobre p {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.3;
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+/* BOTÃO QUEM SOMOS */
+.botao-sobre {
+    display: inline-block;
+    background-color: #005064;
+    color: white;
+    text-decoration: none;
+    padding: 11px 27px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* CATEGORIAS */
+.categorias {
+    background-color: #002f38;
+    min-height: 288px;
+    padding: 14px 0 20px;
+}
+/* TÍTULO */
+.categorias > h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+/* GRUPO DAS CATEGORIAS */
+.lista-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    width: 710px;
+    margin: 0 auto;
+}
+/* CADA CATEGORIA */
+.categoria {
+    width: 170px;
+    flex-shrink: 0;
+}
+/* IMAGEM DO ÓCULOS */
+.categoria img {
+    width: 167px;
+    height: 65px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 11px;
+}
+/* NOME DA CATEGORIA */
+.categoria h3 {
+    color: white;
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+/* DESCRIÇÃO */
+.categoria p {
+    color: white;
+    font-size: 11px;
+    line-height: 1.2;
+    width: 170px;
+    margin-bottom: 20px;
+}
+/* BOTÃO */
+.botao-produto {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+/* EFEITO DO BOTÃO */
+.botao-produto:hover {
+    background-color: white;
+    color: #002f38;
+}
+/* FAIXA DE ENTREGA */
+.entrega {
+    height: 76px;
+    background-color: #fbc126;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* ÍCONE + TEXTO */
+.texto-entrega {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.texto-entrega img {
+    width: 65px;
+    height: 55px;
+    object-fit: contain;
+}
+.texto-entrega h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+/* MAPA */
+.entrega .mapa {
+    width: 55px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 25px;
+}
+/* SOBRE A EMPRESA */
+.empresa {
+    height: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    background-color: white;
+}
+/* TEXTO DA EMPRESA */
+.texto-empresa {
+    width: 435px;
+}
+.texto-empresa h3 {
+    color: #005064;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.texto-empresa h2 {
+    color: #005064;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.texto-empresa p {
+    color: #333;
+    font-size: 11px;
+    line-height: 1.25;
+}
+/* IMAGEM DA EMPRESA */
+.imagem-empresa img {
+    width: 310px;
+    height: 233px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+/* POLÍTICA DE QUALIDADE */
+.qualidade {
+    min-height: 293px;
+    background-color: #002f38;
+    padding-top: 13px;
+}
+/* TÍTULO */
+.qualidade > h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+/* ITENS */
+.itens-qualidade {
+    display: flex;
+    justify-content: center;
+    width: 850px;
+    margin: 0 auto;
+}
+/* CADA ITEM */
+.item-qualidade {
+    width: 170px;
+    min-height: 190px;
+    padding: 0 30px;
+    border-right: 2px solid #fbc126;
+}
+/* ÚLTIMO ITEM SEM LINHA */
+.item-qualidade:last-child {
+    border-right: none;
+}
+/* ÍCONES */
+.item-qualidade img {
+    width: 75px;
+    height: 85px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+/* TÍTULOS */
+.item-qualidade h3 {
+    color: white;
+    font-size: 11px;
+    line-height: 1.1;
+    margin-bottom: 2px;
+}
+/* TEXTOS */
+.item-qualidade p {
+    color: white;
+    font-size: 11px;
+    line-height: 1.2;
+}
+/* NOSSO TIME */
+.time {
+    background-color: white;
+    padding: 14px 0 17px;
+}
+/* TÍTULO */
+.time > h2 {
+    color: #002f38;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+/* LISTA DO TIME */
+.lista-time {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+/* CARD */
+.card-time {
+    width: 167px;
+    height: 234px;
+    background-color: #002f38;
+    border-radius: 9px;
+    padding: 8px 14px;
+    color: white;
+}
+/* FOTO */
+.card-time img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 8px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 40px;
+}
+/* NOME */
+.card-time h3 {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+/* CARGO */
+.card-time h4 {
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+/* DESCRIÇÃO */
+.card-time p {
+    font-size: 11px;
+    line-height: 1.15;
+}
+/* FOOTER */
+footer {
+    height: 203px;
+    background-color: #002f38;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 4.8%;
+}
+/* PARTE ESQUERDA */
+.footer-esquerda {
+    width: 300px;
+}
+/* LOGO */
+.logo-footer {
+    font-size: 23px;
+    font-weight: bold;
+    color: #005064;
+    margin-bottom: 17px;
+}
+.logo-footer span {
+    background-color: #fbc126;
+    color: #005064;
+    padding: 6px 10px;
+    border-radius: 25px 0 25px 0;
+    margin-right: 2px;
+}
+/* FRASE */
+.footer-esquerda > p {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* REDES SOCIAIS */
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.redes a {
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.redes img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+/* PARTE DIREITA */
+.footer-direita {
+    text-align: right;
+    width: 400px;
+    padding-top: 53px;
+}
+.footer-direita h3 {
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+.footer-direita p {
+    font-size: 11px;
+    line-height: 1.3;
+    margin-bottom: 3px;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    header {
+        padding: 0 5%;
+    }
+    nav {
+        gap: 25px;
+    }
+    .banner {
+        height: 500px;
+        background-position: center;
+    }
+    .texto-banner {
+        left: 5%;
+    }
+    .sobre {
+        height: auto;
+        padding: 40px 5%;
+        gap: 40px;
+    }
+    .lista-categorias {
+        width: 90%;
+        gap: 30px;
+    }
+    .categoria {
+        width: 30%;
+    }
+    .categoria img {
+        width: 100%;
+    }
+    .categoria p {
+        width: 100%;
+    }
+    .empresa {
+        padding: 40px 5%;
+    }
+}
+@media (max-width: 650px) {
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        font-size: 10px;
+    }
+    .banner {
+        height: 500px;
+        background-position: center;
+    }
+    .texto-banner {
+        left: 7%;
+        top: 80px;
+    }
+    .texto-banner h1 {
+        font-size: 28px;
+    }
+    .texto-banner h2 {
+        font-size: 32px;
+    }
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    .texto-sobre p {
+        width: 100%;
+    }
+    .lista-categorias {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 35px;
+    }
+    .categoria {
+        width: 80%;
+        text-align: center;
+    }
+    .categoria img {
+        width: 170px;
+        margin: 0 auto 11px;
+    }
+    .categoria p {
+        width: 100%;
+    }
+    .empresa {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .imagem-empresa img {
+        width: 100%;
+        max-width: 400px;
+    }
+    .entrega {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .mapa {
+        width: 90%;
+    }
+    footer {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    .footer-direita {
+        text-align: left;
+        margin-top: 0;
+    }
+}
